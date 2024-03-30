@@ -6,6 +6,12 @@
   font-family: "Rubik", sans-serif;
   width: 100%;
 }
+.genTitle {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+  color: #180202;
+}
 .hero-box {
   background: linear-gradient(to left, #de5150, #ff9292);
   position: relative;
@@ -18,7 +24,7 @@
 }
 
 .nav-bar {
-  width: 1145.5px;
+  width: 80%;
   height: 66px;
   margin: auto;
   padding-top: 34px;
@@ -54,25 +60,23 @@
 
 .hero-items {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 583px;
+  margin: auto;
+  gap: 95px;
+  padding-top: 64px;
 }
 .headphone {
   display: flex;
-  position: absolute;
+  flex: 1;
   height: 583px;
-  width: 570px;
-  margin-top: 64px;
-  margin-left: 166px;
 }
 .heroText {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  width: 517px;
   height: 514px;
   color: white;
-  margin-top: 107px;
-  margin-left: 831px;
 }
 .slogan-1 {
   font-size: 22px;
@@ -120,19 +124,35 @@
 }
 
 /* Collections */
+.collection {
+  width: 100%;
+  height: 724px;
+  display: flex;
+  flex-direction: column;
+}
 .collection-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+}
+.collection-text h1 {
+  padding-top: 130px;
+}
+.collection-text h2 {
   font-size: 44px;
   font-weight: 700;
-  line-height: 58px;
-  text-align: center;
+  margin: 0;
 }
-
 .collection-img {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 80%;
 }
 .coll-img1 {
   width: 324px;
@@ -140,8 +160,8 @@
   border: 1px solid rgba(125, 117, 117, 0.3);
   border-radius: 30%;
   position: absolute;
-  top: 362px;
-  left: 324px;
+  top: 128px;
+  left: 124px;
 }
 .coll-img3 {
   width: 324px;
@@ -149,8 +169,8 @@
   border: 1px solid rgba(125, 117, 117, 0.3);
   border-radius: 30%;
   position: absolute;
-  top: 362px;
-  left: 973px;
+  top: 128px;
+  left: 773px;
 }
 .coll-img2 {
   width: 453px;
@@ -159,7 +179,375 @@
   border-radius: 15%;
   box-shadow: 0 21px 88px rgba(126, 118, 118, 0.2);
   position: absolute;
-  top: 301px;
-  left: 584px;
+  top: 66px;
+  left: 384px;
   z-index: 1;
+}
+.angleLeft {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: 42px;
+}
+.angleRight {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: 1183px;
+}
+/* End Collection */
+.features {
+  display: flex;
+  height: 625px;
+  width: 80%;
+  margin: auto;
+  gap: 68px;
+  padding-top: 130px;
+}
+.featureText {
+  display: flex;
+  flex-direction: column;
+  flex: 5 12;
+}
+.batteryGroup {
+  display: flex;
+  flex-direction: row;
+}
+.batteryImages {
+  display: flex;
+  position: relative;
+}
+.redcircyleImg {
+  width: 96px;
+  height: 96px;
+  top: 61px;
+  left: 1;
+  position: absolute;
+}
+.redcircyleImg2 {
+  top: 41px;
+  left: 1;
+}
+.redcircyleImg3 {
+  top: 41px;
+  left: 1;
+}
+.bottomCircyleImg {
+  width: 98px;
+  height: 48px;
+  left: 1;
+  top: 108px;
+  position: absolute;
+}
+.bottomCircyleImg2 {
+  left: 1;
+  top: 88px;
+}
+.bottomCircyleImg3 {
+  left: 1;
+  top: 88px;
+}
+.inCircyleImg {
+  width: 69px;
+  height: 69px;
+  left: 14px;
+  top: 74px;
+  position: absolute;
+}
+.inCircyleImg2 {
+  left: 14px;
+  top: 54px;
+}
+.inCircyleImg3 {
+  left: 14px;
+  top: 54px;
+}
+.batteryImg {
+  width: 35px;
+  height: 26px;
+  top: 96px;
+  left: 32px;
+  position: absolute;
+}
+.bluetoothImg {
+  width: 35px;
+  height: 35px;
+  top: 71px;
+  left: 32px;
+}
+.microphoneImg {
+  width: 33px;
+  height: 33px;
+  top: 71px;
+  left: 32px;
+  color: #ff4948;
+}
+
+.featureImg {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 7 12;
+}
+.yellowHead {
+  width: 332px;
+  height: 474px;
+  position: absolute;
+  left: 187px;
+  top: 66px;
+}
+.secondbgMusic {
+  width: 309px;
+  height: 355px;
+  position: absolute;
+  left: 324px;
+  top: 1px;
+}
+.leftVibrate {
+  width: 166px;
+  height: 134px;
+  position: absolute;
+  left: 85px;
+  top: 447px;
+}
+.rightVibrate {
+  width: 199px;
+  height: 191px;
+  position: absolute;
+  left: 463px;
+  top: 386px;
+}
+.batteryText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 117px;
+}
+.featureTitle {
+  font-size: 31px;
+  font-weight: 500;
+  color: #180202;
+  padding-top: 40px;
+  margin: 0;
+}
+.batteryTitle {
+  padding-top: 60px;
+}
+.batteryPower {
+  font-size: 16px;
+  font-weight: 400;
+  color: #180202;
+  padding-top: 5px;
+  margin: 0;
+}
+.learnMore {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff4948;
+  padding-top: 10px;
+  margin: 0;
+}
+/* End of features */
+.latestProducts {
+  width: 80%;
+  height: 651px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 130px;
+}
+.productText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0;
+}
+.productDescription {
+  text-align: center;
+}
+.productGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 63px;
+}
+.generic_productGroups {
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  position: relative;
+}
+.gen_mainImg {
+  width: 332px;
+  height: 331px;
+  border-radius: 30px;
+  background-color: #ffe5ee;
+  display: flex;
+}
+.blueImg {
+  background-color: #e5f1ff;
+}
+.greenImg {
+  background-color: #e5fffb;
+}
+
+.gen_pinkHeadset {
+  width: 255px;
+  height: 358px;
+  position: absolute;
+  top: 37px;
+  left: 24px;
+  /* Errorrrrrrrrrr extra space */
+  /* transform: rotateY(-180deg); */
+}
+.gen_Cart {
+  width: 80px;
+  height: 80px;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ffe5ee;
+  position: absolute;
+  top: 60px;
+  left: 283px;
+}
+.cartIcon {
+  width: 30px;
+  height: 30px;
+  color: #716969;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.gen_Review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+}
+.gen_Stars {
+  display: flex;
+}
+.fourPointfive {
+  font-size: 16px;
+  font-weight: 500;
+  color: #180202;
+  margin: 0;
+}
+.gen_Pricegroup {
+  display: flex;
+  justify-content: space-between;
+}
+.gen_headsetName {
+  font-size: 22px;
+  font-weight: 400;
+  color: #180202;
+}
+.gen_price {
+  font-size: 22px;
+  font-weight: 500;
+  color: #180202;
+}
+.box {
+  width: 70%;
+  height: 577px;
+  margin: auto;
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.boxImage {
+  display: flex;
+  flex: 1;
+}
+.boxcase {
+  width: 662px;
+  height: 577px;
+}
+.boxText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.boxTitle {
+  padding-top: 69px;
+}
+.gen_boxFeatures {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 0.7);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+  margin: 0;
+}
+/* End of Latest Pr */
+.subscribe {
+  width: 80%;
+  height: 323px;
+  margin: auto;
+  padding-top: 120px;
+  position: relative;
+}
+.thirddbgMusic {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+.subscribeBox {
+  width: 60%;
+  height: 292px;
+  margin: auto;
+  background-color: #fff4f4;
+  border-radius: 20px;
+  padding-top: 25px;
+}
+.subAlignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribeTitle {
+  padding-top: 54px;
+}
+.subscribeDescription {
+  font-size: 16px;
+  font-weight: 400;
+  color: #180202;
+  padding-top: 6px;
+  margin: 0;
+}
+.subInbox {
+  display: flex;
+  position: relative;
+}
+.subscribeInput {
+  width: 80%;
+  height: 61px;
+  border-radius: 73px;
+  margin: auto;
+  margin-top: 36px;
+  border: none;
+  padding: 0;
+}
+.subscribeButton {
+  width: 167px;
+  height: 61px;
+  border-radius: 50px;
+  background-color: #ff4948;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  position: absolute;
+  top: 36px;
+  right: 60px;
+}
+::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 17px 30px;
 }

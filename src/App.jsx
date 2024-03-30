@@ -4,6 +4,19 @@ import "./App.css";
 // Images
 import logo from "../public/logo.png";
 import bgMusic from "../src/assets/bg-music.png";
+import secondbgMusic from "../src/assets/secondbgMusic.png";
+import thirddbgMusic from "../src/assets/thirdbgMusic.png";
+import leftVibrate from "../src/assets/leftVibrate.png";
+import rightVibrate from "../src/assets/rightVibrate.png";
+import battery from "../src/assets/feature/battery.png";
+import redcircyle from "../src/assets/feature/redcircyle.png";
+import inCircyle from "../src/assets/feature/inCircyle.png";
+import bottomCircyle from "../src/assets/feature/bottomCircyle.png";
+import bluetoothB from "../src/assets/bluetooth-b.svg";
+import pinkset from "../src/assets/pinkheadset.png";
+import cart from "../src/assets/cart.png";
+import blueset from "../src/assets/blueheadset.png";
+import greenset from "../src/assets/greenheadset.png";
 
 // Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +24,10 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faMicrophoneLines } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 class App extends Component {
   render() {
@@ -66,7 +83,7 @@ class App extends Component {
             </div>
             <div className="heroText">
               <p className="slogan-1">HEAR IT. FEEL IT</p>
-              <h2 className="slogan-2">MOVE WITH THE MUSIC</h2>
+              <p className="slogan-2">MOVE WITH THE MUSIC</p>
               <div className="price">
                 <p className="currentPrice">$ 435</p>
                 <p className="slash">|</p>
@@ -78,11 +95,18 @@ class App extends Component {
             </div>
           </div>
         </div>
+        {/* End of Hero */}
         <div className="collection">
           <div className="collection-text">
-            <h4>Our Latest color collection 2021</h4>
+            <h1 className="genTitle">Our Latest</h1>
+            <h2 className="genTitle">color collection 2021</h2>
           </div>
           <div className="collection-img">
+            <FontAwesomeIcon
+              className="angleLeft"
+              icon={faAngleLeft}
+              style={{ color: "black" }}
+            />
             <img
               className="coll-img1"
               src="https://s3-alpha-sig.figma.com/img/c4c5/8416/9756df750e5f883b764b2a59cbfd4f46?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q01~qsUdJzpfWjEz9LuQduGUMaKuQyIu8fyJ~3dy5ICV8v-HAG~sx596ZTwB2u41pkIJt83qgFn0wFrlBP8EhqBCgXkgYW1ODPKRvp2PDV5AeebOCIcYfsMat~bN936XvP0uai1klrbMxgqWwHtSMVa6SeGy4NE~0tAnMqvj69ueadVAFDFRLxxqw4hc6Nq083jPTllxCZOotI3AatZz4OPsMFsHd6qRmXXzo2OhXS7L4UfmTWCzZ34M44Tnm-xTBIA0Zq71wKEDNVV9lHCw~1phQIVsqLt6NKI48k5LYQFfgHmInHB5v2~n7OD6DRXG6yHdCpDXEKpp1fkjlLEDTg__"
@@ -98,8 +122,304 @@ class App extends Component {
               src="https://s3-alpha-sig.figma.com/img/5991/e4cf/3e003db3e926501c6a97cd7a2c70d305?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pecDsU7iIxOgcXUulpJDSETg-csjfoW-BYP6xOB7pVLibUfEXqXPplKKCGnUjruhvYlgONwWZW0uygwvlh8liujyu0hMkOEi6oYwnVcVzwGjRFRRGH4JJuBeKaHOWSFkNYgHrpeBCim4v0T-lwmaP5hWNbvpL0DI7TSGOV0Tk7~JC0mfJ7YVFsbtf887rKdjUcwxONfyhqbo8oVd5mN0Gjvyvnox7bf69VF1XTrA~3~dG9iNMiSoz30R~a7hQcOwF1XmHHb0~PjRwZ-T1Be0Ul~qXgE0Dq5nL79FMe4sND~3xvZdSrTjs68GKE5Li8olisOe7fMciyZmkB-zhJULBw__"
               alt=""
             />
+            <FontAwesomeIcon
+              className="angleRight"
+              icon={faAngleRight}
+              style={{ color: "black" }}
+            />
           </div>
         </div>
+        {/* End collection */}
+        <div className="features">
+          <div className="featureText">
+            <h1 className="genTitle">
+              Good headphones and loud music is all you need
+            </h1>
+            <div className="batteryGroup">
+              <div className="batteryImages">
+                <img className="batteryImg" src={battery} alt="" />
+                <img className="redcircyleImg" src={redcircyle} alt="" />
+                <img className="bottomCircyleImg" src={bottomCircyle} alt="" />
+                <img className="inCircyleImg" src={inCircyle} alt="" />
+              </div>
+              <div className="batteryText">
+                <h1 className="featureTitle batteryTitle">Battery</h1>
+                <p className="batteryPower">Battery 6.2V-AAC codec</p>
+                <p className="learnMore">Lern More</p>
+              </div>
+            </div>
+            <div className="batteryGroup">
+              <div className="batteryImages">
+                <img
+                  className="batteryImg bluetoothImg"
+                  src={bluetoothB}
+                  alt=""
+                />
+                <img
+                  className="redcircyleImg redcircyleImg2"
+                  src={redcircyle}
+                  alt=""
+                />
+                <img
+                  className="bottomCircyleImg bottomCircyleImg2"
+                  src={bottomCircyle}
+                  alt=""
+                />
+                <img
+                  className="inCircyleImg inCircyleImg2"
+                  src={inCircyle}
+                  alt=""
+                />
+              </div>
+              <div className="batteryText">
+                <h1 className="featureTitle">Bluetooth</h1>
+                <p className="batteryPower">Battery 6.2V-AAC codec</p>
+                <p className="learnMore">Lern More</p>
+              </div>
+            </div>
+            <div className="batteryGroup">
+              <div className="batteryImages">
+                <FontAwesomeIcon
+                  className="batteryImg microphoneImg"
+                  icon={faMicrophoneLines}
+                  style={{ color: "#ff4948" }}
+                />
+                <img
+                  className="redcircyleImg redcircyleImg3"
+                  src={redcircyle}
+                  alt=""
+                />
+                <img
+                  className="bottomCircyleImg bottomCircyleImg3"
+                  src={bottomCircyle}
+                  alt=""
+                />
+                <img
+                  className="inCircyleImg inCircyleImg3"
+                  src={inCircyle}
+                  alt=""
+                />
+              </div>
+              <div className="batteryText">
+                <h1 className="featureTitle">Microphone</h1>
+                <p className="batteryPower">Battery 6.2V-AAC codec</p>
+                <p className="learnMore">Lern More</p>
+              </div>
+            </div>
+            <div className="bluetooth"></div>
+            <div className="microphone"></div>
+          </div>
+          <div className="featureImg">
+            <img className="secondbgMusic" src={secondbgMusic} alt="" />
+            <img className="leftVibrate" src={leftVibrate} alt="" />
+            <img className="rightVibrate" src={rightVibrate} alt="" />
+            <img
+              className="yellowHead"
+              src="https://s3-alpha-sig.figma.com/img/8f58/525b/6ffeae5f0118013fd07f51e73ef8303f?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H~d5VQbPT6PxANexOgtiUAC~zFvU6nzo7GbY8sZs7JNVpFn0~ohksLwZmGJDMZh-FvTpI13KPyeroxgMWl5C-O4pLLvfKFcCclo-zLTM84vRww3xi8gYHuXanIVnKcLg~mV1vuzVjUMpzihMc5wiQzo2eNXoKTkyv3O8esVqiSOvK6ym36uNU-YxNLtsdaJS9Od9xsmImPHrqGUaKq5Td2oEItb-gWaiekHwQFbBa6TSs5X1Ht1xzJjJc1nwaMFHPSevfsTh29bktXi7soqusbrzRmgkKmxVhGvwrOq646dTcR-T9ubDQFosQJg3~tSor8QVhTnNglSz7CE-AV0yMg__"
+              alt=""
+            />
+          </div>
+        </div>
+        {/* End of features */}
+        <div className="latestProducts">
+          <div className="productText">
+            <h1 className="genTitle">Our Latest Product</h1>
+            <p className="productDescription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              facilisis nunc ipsum aliquam, ante.
+            </p>
+          </div>
+          <div className="productGroup">
+            <div className="generic_productGroups">
+              <div className="gen_mainImg">
+                <img
+                  className="gen_pinkHeadset"
+                  // src="https://s3-alpha-sig.figma.com/img/c558/b64a/2d001d67c99714f765c8de5abd1f3989?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QwtxdUShPbGxvweIc~Bxn2vIRGGSM19odjKhbFjb2~vuOnrYBcrOEU36JlisUx1Lge85945-S8po8UcU0baMys8DevWuriM4YMJktBFkksJ7I85EGiYVZbxY~0vmbaixcHXtsPWVVBLlWzWrwWvNjL1RmLP1~fnnvMntBWLWV5NvNVeAWS3zgrjm8WIk32I-KTX54PyuIBjBw0TE70qQsv7vkiyX~gwkfeJ6KgQdw-Ci-VZRtghnoC3M-sYSJGxFOUHBm00LI~EvvtUwoZCr8ZNZAOMUgBC9Ff~R70CUJ-jqHx0WttEYexwOlHNXFt7JHzAIJM~XWKhFCkOvd3MMNw__"
+                  src={pinkset}
+                  alt=""
+                />
+              </div>
+              <div className="gen_Cart">
+                <img className="cartIcon" src={cart} alt="" />
+              </div>
+              <div className="pinkText">
+                <div className="gen_Review">
+                  <div className="gen_Stars">
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                  </div>
+                  <div className="pinkreviewNumber">
+                    <p className="fourPointfive">4.50</p>
+                  </div>
+                </div>
+                <div className="gen_Pricegroup">
+                  <p className="gen_headsetName">Read Headphone</p>
+                  <p className="gen_price">$ 256</p>
+                </div>
+              </div>
+            </div>
+            <div className="generic_productGroups">
+              <div className="gen_mainImg blueImg">
+                <img
+                  className="gen_pinkHeadset"
+                  // src="https://s3-alpha-sig.figma.com/img/c558/b64a/2d001d67c99714f765c8de5abd1f3989?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QwtxdUShPbGxvweIc~Bxn2vIRGGSM19odjKhbFjb2~vuOnrYBcrOEU36JlisUx1Lge85945-S8po8UcU0baMys8DevWuriM4YMJktBFkksJ7I85EGiYVZbxY~0vmbaixcHXtsPWVVBLlWzWrwWvNjL1RmLP1~fnnvMntBWLWV5NvNVeAWS3zgrjm8WIk32I-KTX54PyuIBjBw0TE70qQsv7vkiyX~gwkfeJ6KgQdw-Ci-VZRtghnoC3M-sYSJGxFOUHBm00LI~EvvtUwoZCr8ZNZAOMUgBC9Ff~R70CUJ-jqHx0WttEYexwOlHNXFt7JHzAIJM~XWKhFCkOvd3MMNw__"
+                  src={blueset}
+                  alt=""
+                />
+              </div>
+              <div className="gen_Cart">
+                <img className="cartIcon" src={cart} alt="" />
+              </div>
+              <div className="pinkText">
+                <div className="gen_Review">
+                  <div className="gen_Stars">
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                  </div>
+                  <div className="pinkreviewNumber">
+                    <p className="fourPointfive">4.50</p>
+                  </div>
+                </div>
+                <div className="gen_Pricegroup">
+                  <p className="gen_headsetName">Blue Headphone</p>
+                  <p className="gen_price">$ 235</p>
+                </div>
+              </div>
+            </div>
+            <div className="generic_productGroups">
+              <div className="gen_mainImg greenImg">
+                <img
+                  className="gen_pinkHeadset"
+                  // src="https://s3-alpha-sig.figma.com/img/c558/b64a/2d001d67c99714f765c8de5abd1f3989?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QwtxdUShPbGxvweIc~Bxn2vIRGGSM19odjKhbFjb2~vuOnrYBcrOEU36JlisUx1Lge85945-S8po8UcU0baMys8DevWuriM4YMJktBFkksJ7I85EGiYVZbxY~0vmbaixcHXtsPWVVBLlWzWrwWvNjL1RmLP1~fnnvMntBWLWV5NvNVeAWS3zgrjm8WIk32I-KTX54PyuIBjBw0TE70qQsv7vkiyX~gwkfeJ6KgQdw-Ci-VZRtghnoC3M-sYSJGxFOUHBm00LI~EvvtUwoZCr8ZNZAOMUgBC9Ff~R70CUJ-jqHx0WttEYexwOlHNXFt7JHzAIJM~XWKhFCkOvd3MMNw__"
+                  src={greenset}
+                  alt=""
+                />
+              </div>
+              <div className="gen_Cart">
+                <img className="cartIcon" src={cart} alt="" />
+              </div>
+              <div className="pinkText">
+                <div className="gen_Review">
+                  <div className="gen_Stars">
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                    <FontAwesomeIcon
+                      icon={faStar}
+                      style={{ color: "#fdae38" }}
+                    />
+                  </div>
+                  <div className="pinkreviewNumber">
+                    <p className="fourPointfive">4.50</p>
+                  </div>
+                </div>
+                <div className="gen_Pricegroup">
+                  <p className="gen_headsetName">Green Headphone</p>
+                  <p className="gen_price">$ 245</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End of Lates pr */}
+        <div className="box">
+          <div className="boxImage">
+            <img
+              className="boxcase"
+              src="https://s3-alpha-sig.figma.com/img/6f76/67c7/2c05e4c93202562d163d1f8d98908e61?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eyY5iNlkfLA8INOG1SxMOa3Mzelkym5JE26xM0-neQIdDE6WEA9mp-D5b4-ZWKa56NN~o1F0FoFgVQ-8SFgq2x8id-cf707HWGthy5S0N2nM1lTpPs0auiCAp6EeIAGWAt4RxMJRRKtTe7PHNYFwyNWZG2DjgWqfuN741iovCw9FoL9dO7PC53x~Jlg3l9h8yr~O2H3nGn-bIwjj1Q1PwRJFHiWEAR424N9IteILAbjUBEkvMQza3XxXcCFy7q3uHY7Av~oL1QhnLyHzHTFdOXwQunVjVBEpo9-KtYfVi~I0GX2A86fYV~qZY2VqhBtNsZmJc3njjJNlttMjohFKtg__"
+              alt=""
+            />
+          </div>
+          <div className="boxText">
+            <h1 className="boxTitle genTitle">Whatever you get in the box</h1>
+            <div>
+              <div></div>
+              <p className="gen_boxFeatures charger">5A Charger</p>
+            </div>
+            <div>
+              <div></div>
+              <p className="gen_boxFeatures">Extra battery</p>
+            </div>
+            <div>
+              <div></div>
+              <p className="gen_boxFeatures">Sophisticated bag</p>
+            </div>
+            <div>
+              <div></div>
+              <p className="gen_boxFeatures">User manual guide</p>
+            </div>
+          </div>
+        </div>
+        {/*End of Box */}
+        <div className="subscribe">
+          <img className="thirddbgMusic" src={thirddbgMusic} alt="" />
+          <div className="subscribeBox">
+            <h1 className="genTitle subscribeTitle subAlignment">Subscribe</h1>
+            <p className="subscribeDescription subAlignment">
+              Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <div className="subInbox">
+              <input
+                className="subscribeInput subAlignment"
+                type="email"
+                placeholder="Enter Your email address"
+              />
+              <div className="subButton">
+                <button className="subscribeButton">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End of Subscribe */}
       </div>
     );
   }
