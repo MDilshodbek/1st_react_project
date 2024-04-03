@@ -17,6 +17,10 @@ import pinkset from "../src/assets/pinkheadset.png";
 import cart from "../src/assets/cart.png";
 import blueset from "../src/assets/blueheadset.png";
 import greenset from "../src/assets/greenheadset.png";
+import twit from "../src/assets/twit.png";
+import facebook from "../src/assets/facebook.png";
+import insta from "../src/assets/insta.png";
+import sign from "../src/assets/sign.png";
 
 // Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,6 +37,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        {/* Hero */}
         <div className="hero-box">
           <img className="bgMusic" src={bgMusic} alt="" />
           <div className="nav-bar">
@@ -96,6 +101,7 @@ class App extends Component {
           </div>
         </div>
         {/* End of Hero */}
+        {/* collection */}
         <div className="collection">
           <div className="collection-text">
             <h1 className="genTitle">Our Latest</h1>
@@ -130,6 +136,7 @@ class App extends Component {
           </div>
         </div>
         {/* End collection */}
+        {/* Features */}
         <div className="features">
           <div className="featureText">
             <h1 className="genTitle">
@@ -221,6 +228,7 @@ class App extends Component {
           </div>
         </div>
         {/* End of features */}
+        {/* Latest Products */}
         <div className="latestProducts">
           <div className="productText">
             <h1 className="genTitle">Our Latest Product</h1>
@@ -285,7 +293,7 @@ class App extends Component {
                   alt=""
                 />
               </div>
-              <div className="gen_Cart">
+              <div className="gen_Cart blue_bg">
                 <img className="cartIcon" src={cart} alt="" />
               </div>
               <div className="pinkText">
@@ -331,7 +339,7 @@ class App extends Component {
                   alt=""
                 />
               </div>
-              <div className="gen_Cart">
+              <div className="gen_Cart green_bg">
                 <img className="cartIcon" src={cart} alt="" />
               </div>
               <div className="pinkText">
@@ -371,6 +379,7 @@ class App extends Component {
           </div>
         </div>
         {/* End of Lates pr */}
+        {/* Box */}
         <div className="box">
           <div className="boxImage">
             <img
@@ -381,25 +390,34 @@ class App extends Component {
           </div>
           <div className="boxText">
             <h1 className="boxTitle genTitle">Whatever you get in the box</h1>
-            <div>
-              <div></div>
+            <div className="gen_Signgroups">
+              <div className="gen_sign">
+                <img className="countSign chargerSign" src={sign} alt="" />
+              </div>
               <p className="gen_boxFeatures charger">5A Charger</p>
             </div>
-            <div>
-              <div></div>
+            <div className="gen_Signgroups">
+              <div className="gen_sign">
+                <img className="countSign" src={sign} alt="" />
+              </div>
               <p className="gen_boxFeatures">Extra battery</p>
             </div>
-            <div>
-              <div></div>
+            <div className="gen_Signgroups">
+              <div className="gen_sign">
+                <img className="countSign" src={sign} alt="" />
+              </div>
               <p className="gen_boxFeatures">Sophisticated bag</p>
             </div>
-            <div>
-              <div></div>
+            <div className="gen_Signgroups">
+              <div className="gen_sign">
+                <img className="countSign" src={sign} alt="" />
+              </div>
               <p className="gen_boxFeatures">User manual guide</p>
             </div>
           </div>
         </div>
         {/*End of Box */}
+        {/* Subscribe */}
         <div className="subscribe">
           <img className="thirddbgMusic" src={thirddbgMusic} alt="" />
           <div className="subscribeBox">
@@ -420,6 +438,28 @@ class App extends Component {
           </div>
         </div>
         {/* End of Subscribe */}
+        {/* Footer */}
+        <div className="footer">
+          <div className="footerNav">
+            <img className="logo" src={logo} alt="" />
+            <div className="middleFooter">
+              <p className="gen_footer">Home</p>
+              <p className="gen_footer">About</p>
+              <p className="gen_footer">Product</p>
+            </div>
+            <div className="endFooter">
+              <div className="gen_media">
+                <img className="twitter" src={insta} alt="" />
+              </div>
+              <div className="gen_media">
+                <img className="twitter" src={twit} alt="" />
+              </div>
+              <div className="gen_media">
+                <img className="facebook" src={facebook} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
